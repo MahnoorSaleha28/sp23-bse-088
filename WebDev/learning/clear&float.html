@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear and Float</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .heading3{
+            color:rgb(0, 0, 0);
+        }
+        p,h3{
+            text-align: centre;
+            text-align: justify;
+        }
+        h2{
+            margin: 15px auto;
+            width: 250px;
+        }
+        .container{
+            background-color: rgb(208, 215, 228);
+            border: solid rgb(46, 46, 87) 5px;
+            padding: 5px;
+            margin: 50px auto;
+            width: 600px;
+            height: 700px;
+            
+        }
+        .item{
+            border: solid rgb(37, 37, 83) 2px;
+            background-color: #b5b5f2e0;
+            padding: 2px 4px;
+            margin: 10px 5px;
+        }
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #clothes{
+            float: left;
+            width: 48%;
+        }
+        #shoes{
+            height: 258px;
+            float: left;
+            width: 48%;
+        }
+        #accessories{
+            /* when normal element comes with float, it 
+            overlaps. To fix, use clear left */
+            clear: left;
+            width: 98%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h2 class = "h2"> Welcome to My Store </h2>
+      <div id="clothes" class="item">
+        <h3 class = "heading3">Clothes</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          unde earum eius voluptates animi soluta placeat quibusdam recusandae
+          ipsa optio?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Magnam, provident!
+        </p>
+      </div>
+      <div id="shoes" class="item">
+        <h3 class = "heading3">Shoes</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+          obcaecati repellat ratione est nobis beatae distinctio asperiores
+          rerum, sapiente sit reprehenderit, cupiditate, quo vero eum!
+        </p>
+      </div>
+      <div id="accessories" class = "item">
+        <h3 class = "heading3">Accessories</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing
+             elit. Ullam corrupti porro repellendus natus, 
+             mollitia, deleniti qui, magnam vero dignissimos 
+             quos earum. Aliquid quis recusandae totam nam.
+        </p>
+      </div>
+      <div id="gadgets" class = "item">
+        <h3 class = "heading3">Gadgets</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Ullam corrupti porro repellendus natus, 
+            mollitia, deleniti qui, magnam vero dignissimos 
+            quos earum. Aliquid quis recusandae totam nam.
+            Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Deleniti error perferendis iste quidem 
+            maxime quas.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
