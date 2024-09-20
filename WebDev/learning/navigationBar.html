@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      .container {
+        background-color: rgb(146, 206, 105);
+        border: solid darkolivegreen;
+        margin: auto;
+        width: 50%;
+        padding: 23px;
+      }
+      /* pseudo-selectors */
+      .btn:hover {
+        background-color: white;
+        border: solid black 2px;
+      }
+      a:visited {
+        color: rgb(115, 36, 124);
+      }
+      .btn {
+        background-color: darkolivegreen;
+        color: black;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 3px;
+        padding: 4px;
+      }
+      .navbar {
+        background-color: darkolivegreen;
+        border-radius: 35px;
+      }
+      .navbar ul {
+        overflow: auto;
+      }
+      .navbar li {
+        float: left;
+        list-style: none;
+        margin: 15px 20px;
+        font-size: large;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      }
+      .navbar li a {
+        padding: 100px 2px;
+        color: aliceblue;
+        text-decoration: none; /*removes underline*/
+      }
+      .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(20, 48, 28);
+      }
+      .searchbox {
+        float: right;
+        padding: 15px 50px;
+      }
+      .navbar input {
+        border: solid black 2px;
+        border-radius: 15px;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contact Us</a></li>
+          <div class="searchbox">
+            <input
+              type="text"
+              name="searchbox"
+              id="searchbox"
+              placeholder="Type here to search"
+            />
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h3>Welcome Back</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, aliquid
+        dolorum aperiam quis cupiditate minima quam dicta? Amet qui ea eaque
+        voluptatem. Ipsa eligendi officia rem ratione impedit ipsum est.
+      </p>
+      <a href="https://google.com" target="_blank" class="btn">Read more</a>
+      <button class="btn">Accept</button>
+    </div>
+  </body>
+</html>

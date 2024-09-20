@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <form action="">
+        <h2>Payment Form</h2>
+        <h3>Contact Information</h3>
+        <h4>Please fill out the following fields</h4>
+
+        <label for = "name">Name: *</label>
+        <input type = "text" id = "name" name = "name" required>
+        <br>
+        <br>
+
+        <label for = "male">Male:</label>
+        <input type = "radio" id = "male" name = "gender" required >
+        <label for = "female">Female:</label> 
+        <input type = "radio" id = "female" name = "gender" required >
+        <label for = "other">Other:</label>
+        <input type = "radio" id = "other" name = "gender" required>
+        <br>
+        <br>
+
+     <fieldset>
+        <legend>Credentials:</legend>
+        <label for = "email">Email: *</label></label>
+        <input type = "email" id = "email" name = "email" required>
+        <br><br>
+
+        <label for = "password">Password: *</label>
+        <input type = "password" id = "password" name = "password" required>
+     </fieldset>
+     <br><br>
+
+        <label for = "address">Address: *</label>
+        <textarea id = "address" name = "address" rows = "5" cols ="50"></textarea>
+        <br><br>
+
+        <label for = "paymentMethod">Payment Method: *</label>
+        <select name = "paymentMethod" id = "paymentMethod" required>
+            <option value="">---Select Payment Method---</option>
+            <option value = "card">Card</option>
+            <option value="cash">Cash</option>
+        </select>
+        <br><br>
+
+        <label for = "cardExpiryDate">Card Expiry Date: *</label>
+        <input type = "date" name = "date" id = "date" required>
+        <br><br>
+
+        <label for = "CVV">CVV: *</label>
+        <input type="password" name = "CVV" id = "CVV">
+        <br><br>
+
+        <label for="updates">Get updates on email?</label>
+        <input type="checkbox" id="updates" name="updates">
+        <br><br>
+
+        <button type="submit">Submit</button>
+    
+    </form>
+    
+</body>
+</html>
