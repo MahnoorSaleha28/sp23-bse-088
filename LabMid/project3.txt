@@ -1,0 +1,15 @@
+Project Name: Student Attendance System
+
+Description: 
+The Student Attendance System is designed to help educational institutions keep track of student attendance records. The system allows teachers to mark attendance electronically, generate reports, and monitor student presence over time. Students can view their own attendance history via a login portal.
+
+Technologies Used:
+- Python with Django framework for back-end development
+- PostgreSQL for database management
+- Bootstrap for front-end design
+
+Challenges Faced:
+One major challenge was designing a user-friendly interface that made attendance tracking simple while also providing detailed attendance analytics.
+
+Key Learnings:
+Through this project, I gained practical experience in developing web applications using the Django framework and how to integrate Bootstrap for responsive design.
