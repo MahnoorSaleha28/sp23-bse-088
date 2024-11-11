@@ -1,0 +1,15 @@
+Project Name: E-Commerce Website
+
+Description: 
+This project is an online shopping platform that allows users to browse products, add them to a cart, and complete purchases. The admin panel allows store owners to manage product listings, view sales reports, and monitor inventory levels. The website includes user registration, login functionality, and a checkout process with payment integration.
+
+Technologies Used:
+- HTML, CSS, and JavaScript for front-end development
+- PHP for server-side logic
+- MySQL for database management
+
+Challenges Faced:
+The biggest challenge was implementing a secure payment gateway and managing the various states of an order (e.g., placed, shipped, delivered).
+
+Key Learnings:
+This project helped me develop a deeper understanding of full-stack development, particularly focusing on session management and secure transactions.
