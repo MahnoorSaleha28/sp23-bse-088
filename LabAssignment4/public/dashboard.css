@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     color: #ffffff;
@@ -6,7 +5,6 @@ body {
     padding: 0;
 }
 
-/* Header Section */
 h1.display-4 {
     color: #ffffff;
     font-weight: bold;
@@ -17,7 +15,6 @@ p.lead {
     color: #ffffff;
 }
 
-/* Navigation Buttons */
 .btn-primary {
     background-color: #000000;
     border: 2px solid black;
@@ -32,7 +29,6 @@ p.lead {
     transform: scale(1.1);
 }
 
-/* Container */
 .container {
     max-width: 800px;
     margin: auto;
@@ -41,7 +37,6 @@ p.lead {
     border-radius: 8px;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 576px) {
     .d-flex {
         flex-direction: column;
