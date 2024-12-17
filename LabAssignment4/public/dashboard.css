@@ -1,0 +1,54 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+h1.display-4 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+p.lead {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Navigation Buttons */
+.btn-primary {
+    background-color: #000000;
+    border: 2px solid black;
+    border-radius: 35px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #000000; 
+    transform: scale(1.1);
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background-color: #777777;
+    border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .d-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+}
