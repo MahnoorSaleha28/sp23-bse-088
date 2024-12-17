@@ -1,0 +1,86 @@
+<h3><%= pageTitle %></h3>
+
+<a href="/admin/categories/create" class="btn btn-info mb-3">Add Category</a>
+
+<form action="/admin/categories" method="GET" class="mb-3">
+  <div class="row">
+    <!-- Search Bar -->
+    <div class="col-md-6">
+      <input type="text" name="query" class="form-control" placeholder="Search by name or description"
+        value="<%= query || '' %>">
+    </div>
+
+    <!-- Sorting -->
+    <div class="col-md-4">
+      <select name="sort" class="form-control">
+        <option value="">Sort By</option>
+        <option value="name-asc" <%= sort === 'name-asc' ? 'selected' : '' %>>Name: A to Z</option>
+        <option value="name-desc" <%= sort === 'name-desc' ? 'selected' : '' %>>Name: Z to A</option>
+        <option value="products-asc" <%= sort === 'products-asc' ? 'selected' : '' %>>Fewest Products</option>
+        <option value="products-desc" <%= sort === 'products-desc' ? 'selected' : '' %>>Most Products</option>
+      </select>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-primary w-100">Apply</button>
+    </div>
+  </div>
+</form>
+
+<!-- Table -->
+<table class="table table-hover table-responsive">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Products</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% categories.forEach(category => { %>
+      <tr>
+        <td><%= category._id %></td>
+        <td><%= category.name %></td>
+        <td><%= category.description || 'N/A' %></td>
+        <td>
+          <% if (Array.isArray(category.products) && category.products.length > 0) { %>
+            <%= category.products.map(product => product.name).join(', ') %>
+          <% } else { %>
+            No products
+          <% } %>
+        </td>
+        <td>
+          <a href="/admin/categories/edit/<%= category._id %>" class="btn btn-warning btn-sm">Edit</a>
+          <form action="/admin/categories/delete/<%= category._id %>" method="POST" style="display:inline;">
+            <button type="submit" class="btn btn-danger btn-sm mt-2">Delete</button>
+          </form>
+        </td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
+
+<!-- Pagination -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <!-- Previous Button -->
+    <li class="page-item <%= page === 1 ? 'disabled' : '' %>">
+      <a class="page-link" href="/admin/categories/<%= page - 1 %>?query=<%= query %>&sort=<%= sort %>">Previous</a>
+    </li>
+
+    <!-- Page Numbers -->
+    <% for (let i = 1; i <= totalPages; i++) { %>
+      <li class="page-item <%= page === i ? 'active' : '' %>">
+        <a class="page-link" href="/admin/categories/<%= i %>?query=<%= query %>&sort=<%= sort %>"><%= i %></a>
+      </li>
+    <% } %>
+
+    <!-- Next Button -->
+    <li class="page-item <%= page === totalPages ? 'disabled' : '' %>">
+      <a class="page-link" href="/admin/categories/<%= page + 1 %>?query=<%= query %>&sort=<%= sort %>">Next</a>
+    </li>
+  </ul>
+</nav>

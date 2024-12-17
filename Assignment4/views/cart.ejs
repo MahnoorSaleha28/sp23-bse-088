@@ -1,0 +1,32 @@
+<div class="container mt-4">
+    <h2>Your Cart</h2>
+  
+    <% if (products.length === 0) { %>
+      <p>Your cart is empty.</p>
+    <% } else { %>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% let totalPrice = 0; %> <!-- Initialize totalPrice variable -->
+          <% products.forEach(product => { %>
+            <tr>
+              <td><%= product.name %></td>
+              <td><%= product.price %></td>
+            </tr>
+            <% totalPrice += product.price; %>
+          <% }) %>
+        </tbody>
+      </table>
+  
+      <div>
+        <p><strong>Total Bill: </strong><%= totalBill %></p>
+        <a href="/admin/orders/checkoutpage" class="btn btn-primary">Checkout</a>
+      </div>
+    <% } %>
+  </div>
+  

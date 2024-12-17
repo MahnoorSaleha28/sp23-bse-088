@@ -1,0 +1,56 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #c9d7eb; /* Dark blue background for the body */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+h1.display-4 {
+    color: #3d3b57;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+p.lead {
+    font-size: 20px;
+    color: rgb(48, 47, 91);
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+/* Navigation Buttons */
+.btn-primary {
+    background-color: #3c435c; /* Dark blue */
+    border: none;
+    border-radius: 35px;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 200px;
+}
+
+.btn-primary:hover {
+    background-color: #0f1a34; /* Slightly darker blue on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .d-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+}
