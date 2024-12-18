@@ -1,0 +1,345 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 3000px;
+}
+#menu-icon {
+  width: 30px;
+  fill: #644d93;
+}
+#shopping-cart {
+  width: 30px;
+}
+#logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+.sticky-top {
+  background-color: white;
+  z-index: 10000px;
+}
+#sale-img {
+  width: 450px;
+  background-color: #cd0158;
+}
+.sale-banner {
+  background-color: #cd0158;
+  border: 2px solid black;
+  margin-bottom: 60px;
+}
+.navbar {
+  background-color: #553d94;
+}
+.navbar a {
+  color: white;
+}
+.nav-item {
+  text-indent: 35px;
+}
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.welcome-message {
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: 0; 
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bg-clr {
+  background-color: rgb(209, 196, 222);
+}
+
+.btn1 {
+  background-color: #5833a2;
+  color: #ffffff;
+  border-radius: 100px;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  width: 110px;
+  height: 40px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.btn1:hover {
+  background-color: #221a32;
+  color: white;
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* Card Styling */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 15px;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure all cards stretch to the same height */
+}
+.card-img-top {
+  height: 150px; /* Fixed height for images */
+  object-fit: cover; /* Ensure the image fits within the fixed height */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Optional: Add subtle animation for card appearance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.5s ease;
+}
+
+.halloween-banner {
+  background-color: #ff6e00;
+  border: 2px solid black;
+  margin-bottom: 60px;
+}
+.halloween-img {
+  width: 400px;
+  height: 440px;
+  margin-top: -50px;
+}
+.lspacing {
+  letter-spacing: 3px;
+  font-size: 17px;
+}
+.cha-ching-banner img {
+  max-height: 300px;
+  width: 100%;
+}
+.cha-ching-banner {
+  padding-bottom: 20px;
+  border: 2px solid black;
+}
+
+.yellow-btn {
+  color: black;
+  background-color: #fdec59;
+  border-radius: 100px;
+  border: 2px solid black;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  height: 45px;
+  width: 140px;
+}
+.yellow-btn:hover {
+  background-color: rgb(255, 255, 120);
+  border: 2px solid black;
+  color: black;
+  transform: scale(1.1);
+}
+.hero-section {
+  background-color: #f8f9fa;
+}
+
+.offer-box {
+  padding: 20px;
+  background-color: rgba(250, 239, 251, 0.562);
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid black;
+}
+
+.offer-img {
+  margin-top: 20px;
+  width: 300px;
+}
+.category-buttons .btn {
+  margin-bottom: 15px;
+}
+.btn-custom {
+  color: white;
+  background-color: black;
+  border-radius: 100px;
+  height: 45px;
+  width: 150px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+.btn-custom:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transform: scale(1.1);
+}
+.category-box {
+  border: 2px solid black;
+  background-color: #dededf;
+}
+.category-box:hover {
+  background-color: #c4b8da;
+}
+.aphmau-img {
+  position: relative;
+}
+.aphmau-line1 {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+}
+.aphmau-line2 {
+  position: absolute;
+  top: 79%;
+  left: 28%;
+}
+.btn-custom2 {
+  position: absolute;
+  top: 87%;
+  left: 43%;
+  background-color: #553d94;
+  color: white;
+}
+.btn-custom2:hover {
+  background-color: white;
+  color: #553d94;
+  border: 2px solid #553d94;
+}
+.best-seller-title {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 60px;
+}
+.arrow-img {
+  width: 50px;
+  position: absolute;
+  top: 20%;
+}
+.circle-img {
+  position: absolute;
+  width: 100px;
+  left: 8%;
+}
+.shop-all {
+  position: absolute;
+  left: 90%;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+  letter-spacing: 1px;
+}
+.prod-img {
+  width: 250px;
+  border: 1px solid black;
+}
+.brands-imgs {
+  width: 180px;
+}
+.view-gallery {
+  color: black;
+  text-underline-offset: 10px;
+}
+.footer {
+  background-color: #f5f0ff;
+  padding: 40px 0;
+}
+
+.footer h6 {
+  color: #553d94;
+}
+.footer p {
+  font-size: 12px;
+}
+.btn-custom4 {
+  width: 180px;
+  background-color: transparent;
+  color: #553d94;
+  border-radius: 25px;
+  border: 2px solid #553d94;
+}
+.btn-custom3 {
+  width: 100px;
+  background-color: #553d94;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn-custom4:hover {
+  background-color: #f4f4f4;
+}
+.btn-custom3:hover {
+  background-color: #553d94;
+  color: white;
+  transform: scale(1.1);
+}
+.footer ul {
+  list-style-type: none;
+}
+.footer ul li {
+  margin-bottom: 10px;
+}
+.footer ul li a {
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+}
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+.social-links img {
+  width: 50px;
+  margin-right: 10px;
+}
+.download-icons img {
+  width: 140px;
+}

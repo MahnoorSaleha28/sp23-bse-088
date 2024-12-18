@@ -1,0 +1,49 @@
+<div class="container mt-5">
+    <h3>Search Results:</h3>
+    <a href="/" class="btn btn-primary mb-3">Back</a>
+    
+    <% if (products.length > 0) { %>
+      <div class="row">
+        <% products.forEach(product => { %>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="<%= product.image %>" alt="<%= product.name %>">
+              <div class="card-body">
+                <h6 class="card-title"><%= product.name %></h6>
+                <p><strong>Rs.<%= product.price %></strong></p>
+                <!-- Trigger for Modal -->
+                <button class="btn1 btn-sm" data-bs-toggle="modal" data-bs-target="#productModal<%= product._id %>">Buy Now</button>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Product Details Modal for each product -->
+          <div class="modal fade" id="productModal<%= product._id %>" tabindex="-1" aria-labelledby="productModalLabel<%= product._id %>" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="productModalLabel<%= product._id %>"><%= product.name %></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img class="img-fluid" src="<%= product.image %>" alt="<%= product.name %>">
+                    </div>
+                    <div class="col-md-6">
+                      <p><strong>Description:</strong> <%= product.description %></p>
+                      <p><strong>Price:</strong> Rs.<%= product.price %></p>
+                      <button class="btn1">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    <% } else { %>
+      <p>No products found matching your search.</p>
+    <% } %>
+  </div>
+  
